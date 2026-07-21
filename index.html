@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vercelli Bar e Pasticceria | Cafeteria e Confeitaria Italiana em Maringá</title>
+<meta name="description" content="Conheça a Vercelli Bar e Pasticceria em Maringá. Cafés especiais, cannoli, entremets artesanais e muito mais em um ambiente aconchegante.">
+<meta name="keywords" content="cafeteria Maringá, confeitaria italiana, cannoli, entremet, café especial, Vercelli">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.vercellipasticceria.com.br/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Vercelli Bar e Pasticceria">
+<meta property="og:title" content="Vercelli Bar e Pasticceria | Cafeteria e Confeitaria Italiana em Maringá">
+<meta property="og:description" content="Cafés especiais, doces artesanais e sabores italianos preparados com excelência, em Maringá - PR.">
+<meta property="og:image" content="images/fachada.jpg">
+<meta property="og:url" content="https://www.vercellipasticceria.com.br/">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vercelli Bar e Pasticceria | Maringá - PR">
+<meta name="twitter:description" content="Cafés especiais, doces artesanais e sabores italianos preparados com excelência.">
+<meta name="twitter:image" content="images/fachada.jpg">
+
+<!-- Favicon placeholder -->
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Local business structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Vercelli Bar e Pasticceria",
+  "image": "images/fachada.jpg",
+  "servesCuisine": "Italiana, Confeitaria, Cafeteria",
+  "priceRange": "$$",
+  "telephone": "+55 44 99827-7916",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Laguna, 1895, Zona 03",
+    "addressLocality": "Maringá",
+    "addressRegion": "PR",
+    "postalCode": "87050-260",
+    "addressCountry": "BR"
+  },
+  "sameAs": ["https://www.instagram.com/vercelli.pasticceria"],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "08:00",
+    "closes": "18:30"
+  }]
+}
+</script>
+
+<style>
+/* ==========================================================================
+   VERCELLI BAR E PASTICCERIA — design tokens
+   Paleta: creme #F6EEDF · branco #FFFDF8 · bege #E7D6B2 · marrom #4A2E1D
+           dourado #B8935B · verde escuro #1E3A2B (detalhes)
+   Tipografia: Playfair Display (títulos) + Poppins (texto)
+   ========================================================================== */
+
+:root{
+  --cream:#F6EEDF;
+  --white:#FFFDF8;
+  --beige:#E7D6B2;
+  --beige-deep:#D8BE8C;
+  --brown:#4A2E1D;
+  --brown-deep:#2B1A10;
+  --brown-soft:#7A5236;
+  --gold:#B8935B;
+  --gold-light:#D9BE8C;
+  --green:#1E3A2B;
+  --green-soft:#2F5240;
+  --shadow: 0 20px 50px -20px rgba(43,26,16,0.35);
+  --shadow-soft: 0 10px 30px -12px rgba(43,26,16,0.25);
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 10px;
+  --ease: cubic-bezier(.22,.61,.36,1);
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  color:var(--brown);
+  background:var(--cream);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{
+  font-family:'Playfair Display', serif;
+  color:var(--brown-deep);
+  margin:0 0 .5em;
+  letter-spacing:.2px;
+}
+p{ line-height:1.75; color:var(--brown-soft); margin:0 0 1em; }
+a{ color:inherit; text-decoration:none; }
+img{ max-width:100%; display:block; }
+ul{ margin:0; padding:0; list-style:none; }
+button{ font-family:inherit; cursor:pointer; }
+
+.container{
+  width:100%;
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 clamp(20px,5vw,32px);
+}
+
+/* Skip link — accessibility */
+.skip-link{
+  position:absolute; left:-999px; top:auto;
+  background:var(--brown-deep); color:var(--cream);
+  padding:12px 20px; z-index:9999; border-radius:0 0 8px 0;
+}
+.skip-link:focus{ left:0; top:0; }
+
+:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+
+/* Eyebrow label */
+.eyebrow{
+  display:inline-flex; align-items:center; gap:10px;
+  font-family:'Poppins', sans-serif;
+  font-size:.72rem; letter-spacing:3.5px; text-transform:uppercase;
+  color:var(--gold); font-weight:600; margin-bottom:14px;
+}
+.eyebrow::before{
+  content:""; width:26px; height:1px; background:var(--gold);
+}
+
+/* Ornamental divider — signature element (coffee-ring + laurel motif) */
+.ornament{
+  display:flex; align-items:center; justify-content:center;
+  gap:14px; margin:0 auto 40px; width:fit-content;
+}
+.ornament svg{ width:38px; height:38px; color:var(--gold); }
+.ornament .line{ width:56px; height:1px; background:linear-gradient(90deg,transparent,var(--gold),transparent); }
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  padding:15px 32px;
+  border-radius:100px;
+  font-size:.92rem; font-weight:600; letter-spacing:.4px;
+  border:1px solid transparent;
+  transition:transform .45s var(--ease), box-shadow .45s var(--ease), background .35s ease, color .35s ease, border-color .35s ease;
+  white-space:nowrap;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--gold),var(--gold-light));
+  color:var(--brown-deep);
+  box-shadow:0 12px 30px -10px rgba(184,147,91,.6);
+}
+.btn-primary:hover{ transform:translateY(-3px); box-shadow:0 18px 36px -10px rgba(184,147,91,.75); }
+.btn-outline{
+  background:rgba(255,255,255,.06);
+  color:var(--white);
+  border-color:rgba(255,253,248,.55);
+  backdrop-filter:blur(6px);
+}
+.btn-outline:hover{ background:var(--white); color:var(--brown-deep); transform:translateY(-3px); }
+.btn-dark{
+  background:var(--green);
+  color:var(--cream);
+}
+.btn-dark:hover{ background:var(--green-soft); transform:translateY(-3px); box-shadow:var(--shadow-soft); }
+
+/* ---------- Header ---------- */
+.site-header{
+  position:fixed; top:0; left:0; right:0; z-index:1000;
+  padding:20px 0;
+  transition:background .4s var(--ease), padding .4s var(--ease), box-shadow .4s var(--ease);
+}
+.site-header.scrolled{
+  padding:12px 0;
+  background:rgba(246,238,223,.86);
+  backdrop-filter:blur(14px) saturate(140%);
+  box-shadow:0 6px 30px -18px rgba(43,26,16,.4);
+}
+.site-header .container{ display:flex; align-items:center; justify-content:space-between; }
+
+.logo{ display:flex; align-items:center; gap:12px; }
+.logo-mark{
+  width:44px; height:44px; border-radius:50%;
+  border:1.4px solid var(--gold);
+  display:flex; align-items:center; justify-content:center;
+  overflow:hidden;
+  background:#1a120c;
+  flex-shrink:0;
+  transition:border-color .3s;
+}
+.logo-mark img{ width:100%; height:100%; object-fit:cover; display:block; }
+.logo-text{
+  font-family:'Playfair Display', serif;
+  font-weight:700; font-size:1.15rem; line-height:1.05;
+  color:var(--white);
+  transition:color .4s;
+}
+.site-header.scrolled .logo-text{ color:var(--brown-deep); }
+.logo-text span{
+  display:block; font-family:'Poppins',sans-serif; font-weight:400;
+  font-size:.6rem; letter-spacing:2.5px; text-transform:uppercase; color:var(--gold);
+}
+
+.nav-links{ display:flex; align-items:center; gap:34px; }
+.nav-links a{
+  font-size:.86rem; font-weight:500; color:var(--white);
+  position:relative; padding:4px 0; transition:color .4s;
+}
+.site-header.scrolled .nav-links a{ color:var(--brown); }
+.nav-links a::after{
+  content:""; position:absolute; left:0; bottom:0; height:1.5px; width:0;
+  background:var(--gold); transition:width .35s var(--ease);
+}
+.nav-links a:hover::after{ width:100%; }
+.nav-links a:hover{ color:var(--gold-light); }
+.site-header.scrolled .nav-links a:hover{ color:var(--gold); }
+
+.nav-cta{ display:flex; align-items:center; gap:16px; }
+.nav-cta .btn{ padding:11px 24px; font-size:.8rem; }
+
+.burger{
+  display:none; width:26px; height:20px; position:relative; background:none; border:none; z-index:1100;
+}
+.burger span{
+  position:absolute; left:0; width:100%; height:2px; background:var(--white);
+  transition:all .35s var(--ease);
+}
+.site-header.scrolled .burger span{ background:var(--brown-deep); }
+.burger span:nth-child(1){ top:0; }
+.burger span:nth-child(2){ top:9px; }
+.burger span:nth-child(3){ top:18px; }
+.burger.open span:nth-child(1){ transform:translateY(9px) rotate(45deg); }
+.burger.open span:nth-child(2){ opacity:0; }
+.burger.open span:nth-child(3){ transform:translateY(-9px) rotate(-45deg); }
+.burger.open span{ background:var(--brown-deep) !important; }
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative; min-height:100svh; display:flex; align-items:center;
+  overflow:hidden; isolation:isolate;
+}
+.hero-bg{
+  position:absolute; inset:0; z-index:-2;
+  background-image:
+    linear-gradient(180deg, rgba(20,12,7,.5) 0%, rgba(20,12,7,.58) 45%, rgba(20,12,7,.86) 100%),
+    url('images/hero-ambiente.jpg');
+  background-size:cover; background-position:center;
+  will-change:transform;
+}
+.hero-grain{
+  position:absolute; inset:0; z-index:-1; opacity:.5; mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+}
+.hero-content{ max-width:760px; padding-top:90px; }
+.hero .eyebrow{ color:var(--gold-light); }
+.hero .eyebrow::before{ background:var(--gold-light); }
+.hero h1{
+  color:var(--white); font-size:clamp(2.5rem, 6vw, 4.6rem);
+  font-weight:700; line-height:1.06; margin-bottom:22px;
+}
+.hero h1 em{
+  font-style:italic; font-weight:600; color:var(--gold-light);
+}
+.hero p.lead{
+  color:rgba(255,253,248,.88); font-size:clamp(1rem,1.6vw,1.2rem);
+  max-width:560px; margin-bottom:38px; font-weight:300;
+}
+.hero-actions{ display:flex; gap:18px; flex-wrap:wrap; }
+
+.scroll-cue{
+  position:absolute; bottom:34px; left:50%; transform:translateX(-50%);
+  display:flex; flex-direction:column; align-items:center; gap:10px;
+  color:rgba(255,253,248,.75); font-size:.68rem; letter-spacing:2px; text-transform:uppercase;
+}
+.scroll-cue .stick{
+  width:1px; height:38px; background:linear-gradient(180deg, rgba(255,253,248,.8), transparent);
+  position:relative; overflow:hidden;
+}
+.scroll-cue .stick::after{
+  content:""; position:absolute; top:-100%; left:0; width:100%; height:100%;
+  background:var(--gold-light); animation:cue 2.2s infinite ease-in-out;
+}
+@keyframes cue{ 0%{top:-100%;} 60%{top:100%;} 100%{top:100%;} }
+
+/* ---------- Section basics ---------- */
+section{ position:relative; padding:120px 0; }
+.section-head{ max-width:640px; margin:0 auto 56px; text-align:center; }
+.section-head p{ max-width:520px; margin-inline:auto; }
+.section-alt{ background:var(--white); }
+.section-dark{ background:var(--brown-deep); color:var(--cream); }
+.section-dark p{ color:rgba(246,238,223,.72); }
+.section-dark h2, .section-dark h3{ color:var(--cream); }
+
+/* reveal-on-scroll */
+.reveal{ opacity:0; transform:translateY(34px); transition:opacity .9s var(--ease), transform .9s var(--ease); }
+.reveal.is-visible{ opacity:1; transform:translateY(0); }
+.reveal-delay-1{ transition-delay:.1s; }
+.reveal-delay-2{ transition-delay:.22s; }
+.reveal-delay-3{ transition-delay:.34s; }
+
+/* ---------- Sobre ---------- */
+.about-grid{
+  display:grid; grid-template-columns:.9fr 1.1fr; gap:70px; align-items:center;
+}
+.about-media{
+  position:relative; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow);
+  aspect-ratio:4/5;
+}
+.about-media img{ width:100%; height:100%; object-fit:cover; transition:transform .8s var(--ease); }
+.about-media:hover img{ transform:scale(1.06); }
+.about-badge{
+  position:absolute; bottom:22px; left:22px; right:22px;
+  background:rgba(255,253,248,.9); backdrop-filter:blur(10px);
+  border-radius:var(--radius-md); padding:18px 22px;
+  box-shadow:var(--shadow-soft);
+  display:flex; gap:16px; align-items:center;
+}
+.about-badge strong{ font-family:'Playfair Display',serif; font-size:1.5rem; color:var(--gold); display:block; line-height:1; }
+.about-badge span{ font-size:.75rem; color:var(--brown-soft); letter-spacing:.4px; }
+
+.about-text h2{ font-size:clamp(1.9rem,3.4vw,2.7rem); }
+.about-text .signature{
+  font-family:'Playfair Display',serif; font-style:italic; color:var(--gold); font-size:1.05rem;
+  border-left:2px solid var(--gold); padding-left:18px; margin-top:26px;
+}
+
+/* ---------- Cardápio ---------- */
+.menu-grid{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:32px;
+}
+.menu-card{
+  background:var(--white); border-radius:var(--radius-lg); overflow:hidden;
+  box-shadow:var(--shadow-soft); transition:transform .5s var(--ease), box-shadow .5s var(--ease);
+  display:flex; flex-direction:column;
+}
+.menu-card:hover{ transform:translateY(-10px); box-shadow:var(--shadow); }
+.menu-card-media{ position:relative; aspect-ratio:4/3; overflow:hidden; }
+.menu-card-media img{ width:100%; height:100%; object-fit:cover; transition:transform .7s var(--ease); }
+.menu-card:hover .menu-card-media img{ transform:scale(1.08); }
+.menu-card-media::after{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(180deg, transparent 60%, rgba(43,26,16,.35));
+}
+.menu-card-body{ padding:26px 26px 28px; flex:1; display:flex; flex-direction:column; }
+.menu-card-body h3{ font-size:1.28rem; margin-bottom:8px; }
+.menu-card-body p{ font-size:.9rem; flex:1; }
+.menu-more{
+  display:inline-flex; align-items:center; gap:8px;
+  font-size:.82rem; font-weight:600; color:var(--gold); margin-top:6px;
+  border-bottom:1px solid transparent; width:fit-content;
+  transition:border-color .3s, gap .3s;
+}
+.menu-more svg{ width:14px; height:14px; transition:transform .3s; }
+.menu-more:hover{ border-color:var(--gold); gap:12px; }
+.menu-more:hover svg{ transform:translateX(3px); }
+
+/* ---------- Diferenciais ---------- */
+.perks{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:2px;
+  background:var(--beige-deep); border-radius:var(--radius-lg); overflow:hidden;
+  box-shadow:var(--shadow-soft);
+}
+.perk{
+  background:var(--white); padding:42px 30px; text-align:center;
+  display:flex; flex-direction:column; align-items:center; gap:16px;
+  transition:background .4s, transform .4s;
+}
+.perk:hover{ background:var(--cream); transform:translateY(-4px); }
+.perk .icon{
+  width:56px; height:56px; border-radius:50%;
+  background:radial-gradient(circle at 35% 30%, var(--gold-light), var(--gold));
+  display:flex; align-items:center; justify-content:center; color:var(--brown-deep);
+}
+.perk .icon svg{ width:26px; height:26px; }
+.perk h3{ font-size:1.02rem; margin-bottom:2px; }
+.perk p{ font-size:.85rem; margin:0; }
+
+/* ---------- Galeria ---------- */
+.gallery{
+  display:grid; grid-template-columns:repeat(4,1fr); grid-auto-rows:180px; gap:16px;
+}
+.gallery-item{
+  position:relative; overflow:hidden; border-radius:var(--radius-md); cursor:pointer;
+  box-shadow:var(--shadow-soft);
+}
+.gallery-item:nth-child(1){ grid-column:span 2; grid-row:span 2; }
+.gallery-item:nth-child(4){ grid-row:span 2; }
+.gallery-item:nth-child(6){ grid-column:span 2; }
+.gallery-item img{ width:100%; height:100%; object-fit:cover; transition:transform .6s var(--ease); }
+.gallery-item:hover img{ transform:scale(1.1); }
+.gallery-item .overlay{
+  position:absolute; inset:0;
+  background:linear-gradient(180deg, transparent 55%, rgba(30,20,12,.75));
+  display:flex; align-items:flex-end; padding:16px;
+  opacity:0; transition:opacity .4s;
+}
+.gallery-item:hover .overlay{ opacity:1; }
+.gallery-item .overlay span{ color:var(--cream); font-size:.85rem; font-weight:500; letter-spacing:.3px; }
+
+/* Lightbox */
+.lightbox{
+  position:fixed; inset:0; z-index:2000; background:rgba(20,12,7,.94);
+  display:flex; align-items:center; justify-content:center;
+  opacity:0; visibility:hidden; transition:opacity .35s var(--ease);
+  padding:24px;
+}
+.lightbox.open{ opacity:1; visibility:visible; }
+.lightbox img{ max-width:min(900px,90vw); max-height:82vh; border-radius:16px; box-shadow:0 30px 80px rgba(0,0,0,.6); }
+.lightbox-close, .lightbox-nav{
+  position:absolute; background:rgba(255,253,248,.12); border:1px solid rgba(255,253,248,.35);
+  color:var(--cream); width:46px; height:46px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center; transition:background .3s;
+}
+.lightbox-close:hover, .lightbox-nav:hover{ background:rgba(255,253,248,.25); }
+.lightbox-close{ top:24px; right:24px; }
+.lightbox-nav.prev{ left:24px; top:50%; transform:translateY(-50%); }
+.lightbox-nav.next{ right:24px; top:50%; transform:translateY(-50%); }
+.lightbox-nav svg, .lightbox-close svg{ width:20px; height:20px; }
+
+/* ---------- Avaliações ---------- */
+.reviews-wrap{ max-width:760px; margin:0 auto; text-align:center; }
+.rating-badge{
+  display:inline-flex; align-items:center; gap:12px; padding:12px 26px;
+  border:1px solid var(--gold); border-radius:100px; margin-bottom:46px;
+}
+.rating-badge strong{ font-family:'Playfair Display',serif; font-size:1.3rem; color:var(--gold); }
+.rating-badge .stars{ color:var(--gold); letter-spacing:2px; }
+.rating-badge span.src{ font-size:.78rem; color:var(--brown-soft); }
+
+.testimonial-track{ position:relative; min-height:220px; }
+.testimonial{
+  position:absolute; inset:0; opacity:0; transform:translateY(14px);
+  transition:opacity .6s var(--ease), transform .6s var(--ease); pointer-events:none;
+}
+.testimonial.active{ opacity:1; transform:translateY(0); pointer-events:auto; position:relative; }
+.testimonial .stars{ color:var(--gold); font-size:1.1rem; letter-spacing:3px; margin-bottom:18px; }
+.testimonial p{ font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(1.1rem,2vw,1.45rem); color:var(--brown-deep); line-height:1.5; }
+.testimonial .author{ margin-top:20px; font-family:'Poppins',sans-serif; font-style:normal; font-size:.85rem; font-weight:600; color:var(--gold); }
+
+.dots{ display:flex; gap:10px; justify-content:center; margin-top:34px; }
+.dots button{
+  width:9px; height:9px; border-radius:50%; border:none; background:var(--beige-deep);
+  transition:background .3s, width .3s;
+}
+.dots button.active{ background:var(--gold); width:26px; border-radius:6px; }
+
+/* ---------- Informações ---------- */
+.info-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+.info-card{
+  background:var(--white); border-radius:var(--radius-md); padding:34px 30px;
+  box-shadow:var(--shadow-soft); transition:transform .4s, box-shadow .4s;
+}
+.info-card:hover{ transform:translateY(-6px); box-shadow:var(--shadow); }
+.info-card .icon{
+  width:48px; height:48px; border-radius:14px; background:var(--green); color:var(--cream);
+  display:flex; align-items:center; justify-content:center; margin-bottom:18px;
+}
+.info-card .icon svg{ width:22px; height:22px; }
+.info-card h3{ font-size:1.1rem; margin-bottom:10px; }
+.info-card p{ font-size:.92rem; margin-bottom:4px; }
+.info-card a.link{ color:var(--gold); font-weight:600; font-size:.88rem; display:inline-flex; align-items:center; gap:6px; margin-top:8px; }
+.status-dot{ display:inline-flex; align-items:center; gap:8px; font-size:.86rem; font-weight:600; color:var(--green); }
+.status-dot::before{ content:""; width:8px; height:8px; border-radius:50%; background:var(--green); box-shadow:0 0 0 4px rgba(30,58,43,.18); }
+
+/* ---------- Localização / Mapa ---------- */
+.map-wrap{
+  border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow);
+  position:relative;
+}
+.map-wrap iframe{ width:100%; height:440px; border:0; display:block; filter:sepia(8%) saturate(92%); }
+.map-cta{
+  position:absolute; bottom:24px; left:24px;
+  background:rgba(255,253,248,.95); backdrop-filter:blur(8px);
+  border-radius:100px; padding:8px 8px 8px 22px;
+  display:flex; align-items:center; gap:16px; box-shadow:var(--shadow-soft);
+}
+.map-cta span{ font-size:.85rem; font-weight:600; color:var(--brown-deep); }
+
+/* ---------- Instagram CTA ---------- */
+.insta{
+  background:
+    linear-gradient(160deg, rgba(30,58,43,.92), rgba(43,26,16,.94)),
+    url('images/interior-plantas.jpg');
+  background-size:cover; background-position:center;
+  text-align:center; padding:110px 0;
+}
+.insta h2{ color:var(--cream); font-size:clamp(1.9rem,4vw,2.8rem); }
+.insta p{ color:rgba(246,238,223,.78); max-width:520px; margin:0 auto 34px; }
+.insta .handle{ color:var(--gold-light); font-weight:600; }
+
+/* ---------- Contato ---------- */
+.contact-grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:60px; align-items:start; }
+.contact-info h2{ font-size:clamp(1.8rem,3.2vw,2.4rem); }
+.contact-list{ margin-top:30px; display:flex; flex-direction:column; gap:22px; }
+.contact-list li{ display:flex; gap:16px; align-items:flex-start; }
+.contact-list .icon{
+  width:42px; height:42px; border-radius:12px; background:var(--beige);
+  display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--brown-deep);
+}
+.contact-list .icon svg{ width:19px; height:19px; }
+.contact-list strong{ display:block; font-size:.92rem; color:var(--brown-deep); }
+.contact-list span{ font-size:.86rem; color:var(--brown-soft); }
+
+.contact-form{
+  background:rgba(255,253,248,.65); backdrop-filter:blur(14px);
+  border:1px solid rgba(184,147,91,.3);
+  border-radius:var(--radius-lg); padding:42px; box-shadow:var(--shadow-soft);
+}
+.form-row{ margin-bottom:22px; }
+.form-row label{ display:block; font-size:.78rem; font-weight:600; letter-spacing:.4px; text-transform:uppercase; color:var(--brown-soft); margin-bottom:8px; }
+.form-row input, .form-row textarea{
+  width:100%; padding:14px 16px; border-radius:12px; border:1px solid var(--beige-deep);
+  background:var(--white); font-family:'Poppins',sans-serif; font-size:.94rem; color:var(--brown-deep);
+  transition:border-color .3s, box-shadow .3s;
+}
+.form-row input:focus, .form-row textarea:focus{
+  outline:none; border-color:var(--gold); box-shadow:0 0 0 4px rgba(184,147,91,.18);
+}
+.form-row textarea{ resize:vertical; min-height:120px; }
+.form-note{ font-size:.78rem; margin-top:14px; color:var(--brown-soft); opacity:.8; }
+.form-success{
+  display:none; align-items:center; gap:10px; background:rgba(30,58,43,.1); color:var(--green);
+  padding:14px 18px; border-radius:12px; font-size:.86rem; font-weight:500; margin-top:18px;
+}
+.form-success.show{ display:flex; }
+
+/* ---------- Footer ---------- */
+.site-footer{ background:var(--brown-deep); color:rgba(246,238,223,.75); padding:70px 0 30px; }
+.footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:50px; margin-bottom:50px; }
+.footer-brand .logo-text{ color:var(--cream); }
+.footer-brand p{ color:rgba(246,238,223,.62); font-size:.88rem; max-width:320px; margin-top:16px; }
+.site-footer h4{ color:var(--cream); font-size:.95rem; font-family:'Poppins',sans-serif; font-weight:600; letter-spacing:.4px; margin-bottom:18px; }
+.site-footer ul li{ margin-bottom:10px; font-size:.87rem; }
+.site-footer a:hover{ color:var(--gold-light); }
+.footer-bottom{
+  border-top:1px solid rgba(246,238,223,.14); padding-top:26px;
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px;
+  font-size:.78rem; color:rgba(246,238,223,.5);
+}
+.footer-social{ display:flex; gap:14px; }
+.footer-social a{
+  width:36px; height:36px; border-radius:50%; border:1px solid rgba(246,238,223,.25);
+  display:flex; align-items:center; justify-content:center;
+  transition:background .3s, border-color .3s;
+}
+.footer-social a:hover{ background:var(--gold); border-color:var(--gold); }
+.footer-social svg{ width:16px; height:16px; }
+
+/* ---------- WhatsApp floating button ---------- */
+.whatsapp-float{
+  position:fixed; bottom:26px; right:26px; z-index:900;
+  width:60px; height:60px; border-radius:50%;
+  background:var(--green); color:var(--cream);
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 14px 30px -8px rgba(30,58,43,.6);
+  transition:transform .4s var(--ease);
+}
+.whatsapp-float:hover{ transform:scale(1.08) translateY(-2px); }
+.whatsapp-float svg{ width:28px; height:28px; }
+.whatsapp-float::before{
+  content:""; position:absolute; inset:0; border-radius:50%;
+  border:2px solid var(--green); animation:pulse 2.6s infinite;
+}
+@keyframes pulse{
+  0%{ transform:scale(1); opacity:.7; }
+  100%{ transform:scale(1.7); opacity:0; }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width:1024px){
+  .about-grid, .contact-grid{ grid-template-columns:1fr; gap:44px; }
+  .menu-grid{ grid-template-columns:repeat(2,1fr); }
+  .perks{ grid-template-columns:repeat(2,1fr); }
+  .info-grid{ grid-template-columns:1fr 1fr; }
+  .footer-grid{ grid-template-columns:1fr 1fr; }
+  .gallery{ grid-template-columns:repeat(3,1fr); grid-auto-rows:160px; }
+}
+
+@media (max-width:820px){
+  section{ padding:90px 0; }
+  .nav-links, .nav-cta .btn-outline{ display:none; }
+  .burger{ display:block; }
+  .nav-links{
+    position:fixed; inset:0 0 0 auto; width:min(78vw,340px); height:100vh;
+    background:var(--cream); flex-direction:column; justify-content:center; align-items:flex-start;
+    padding:40px; gap:26px; transform:translateX(100%); transition:transform .5s var(--ease);
+    box-shadow:-20px 0 60px rgba(0,0,0,.2);
+  }
+  .nav-links.open{ transform:translateX(0); }
+  .nav-links a{ color:var(--brown-deep) !important; font-size:1.05rem; }
+  .menu-grid{ grid-template-columns:1fr; }
+  .perks{ grid-template-columns:1fr; }
+  .info-grid{ grid-template-columns:1fr; }
+  .footer-grid{ grid-template-columns:1fr; gap:34px; }
+  .gallery{ grid-template-columns:repeat(2,1fr); grid-auto-rows:170px; }
+  .gallery-item:nth-child(1){ grid-column:span 2; grid-row:span 1; }
+  .gallery-item:nth-child(4){ grid-row:span 1; }
+  .hero-actions .btn{ padding:14px 26px; font-size:.85rem; }
+}
+
+@media (max-width:480px){
+  .hero-content{ padding-top:70px; }
+  .contact-form{ padding:28px 22px; }
+  .rating-badge{ flex-direction:column; gap:6px; padding:18px 24px; }
+  .whatsapp-float{ width:54px; height:54px; bottom:18px; right:18px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration:.001ms !important; transition-duration:.001ms !important; scroll-behavior:auto !important; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <a href="#hero" class="logo" aria-label="Vercelli Bar e Pasticceria — início">
+      <span class="logo-mark"><img src="images/logo-vercelli.png" alt="Logo Vercelli" width="44" height="44" loading="eager"></span>
+      <span class="logo-text">Vercelli<span>Bar &amp; Pasticceria</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#sobre">Sobre</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="#localizacao" class="btn btn-outline">Como Chegar</a>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-grain"></div>
+    <div class="container hero-content">
+      <p class="eyebrow">Maringá · Paraná</p>
+      <h1>Vercelli <em>Bar</em> e Pasticceria</h1>
+      <p class="lead">Cafés especiais, doces artesanais e sabores italianos preparados com excelência.</p>
+      <div class="hero-actions">
+        <a href="#cardapio" class="btn btn-primary">Ver Cardápio</a>
+        <a href="#localizacao" class="btn btn-outline">Como Chegar</a>
+      </div>
+    </div>
+    <div class="scroll-cue"><span>Explore</span><div class="stick"></div></div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section id="sobre">
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <img src="images/interior-plantas.jpg" alt="Ambiente interno da Vercelli Bar e Pasticceria, com plantas, luminárias artesanais e balcão" loading="lazy" width="900" height="1120" style="object-position:center 30%">
+        <div class="about-badge">
+          <strong>4,5★</strong>
+          <span>Avaliação média dos nossos clientes no Google</span>
+        </div>
+      </div>
+      <div class="about-text reveal reveal-delay-1">
+        <p class="eyebrow">Nossa história</p>
+        <h2>Um pedaço da Itália em Maringá</h2>
+        <p>A Vercelli Bar e Pasticceria oferece uma experiência única para quem aprecia cafés especiais, doces artesanais e receitas inspiradas na confeitaria italiana. Em um ambiente aconchegante e climatizado, cada detalhe foi pensado para proporcionar momentos especiais.</p>
+        <p class="signature">"Tradição, sabor e acolhimento em cada xícara."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CARDÁPIO ===================== -->
+  <section id="cardapio" class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" style="justify-content:center">Destaques do cardápio</p>
+        <h2>Sabores que contam uma história</h2>
+        <p>Uma seleção dos favoritos da casa, feitos diariamente com ingredientes frescos e técnicas artesanais.</p>
+      </div>
+
+      <div class="ornament reveal">
+        <div class="line"></div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 3c-3 3-3 7 0 10 3-3 3-7 0-10Z"/><path d="M12 13v8"/><path d="M8 21h8"/></svg>
+        <div class="line"></div>
+      </div>
+
+      <div class="menu-grid">
+
+        <article class="menu-card reveal">
+          <div class="menu-card-media">
+            <img src="images/cannoli.jpg" alt="Cannoli siciliano recheado com ricota e gotas de chocolate" loading="lazy" width="700" height="700">
+          </div>
+          <div class="menu-card-body">
+            <h3>Cannoli</h3>
+            <p>Massa crocante recheada com ricota doce, finalizada com gotas de chocolate e açúcar de confeiteiro.</p>
+            <a href="#contato" class="menu-more">Saiba Mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="menu-card reveal reveal-delay-1">
+          <div class="menu-card-media">
+            <img src="images/cocada-brulee.jpg" alt="Cocada Brulee, cocada de forno com creme Paris e açúcar maçaricado" loading="lazy" width="700" height="700">
+          </div>
+          <div class="menu-card-body">
+            <h3>Cocada Brulée</h3>
+            <p>Cocada de forno com creme Paris e açúcar maçaricado, para um contraste crocante e cremoso.</p>
+            <a href="#contato" class="menu-more">Saiba Mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="menu-card reveal reveal-delay-2">
+          <div class="menu-card-media">
+            <img src="images/barrinha-brownie.jpg" alt="Barrinha de brownie com ganache de caramelo, nozes e chocolate ao leite" loading="lazy" width="700" height="700">
+          </div>
+          <div class="menu-card-body">
+            <h3>Barrinha de Brownie</h3>
+            <p>Base de brownie meio amargo, ganache de caramelo, finalizada com nozes e chocolate ao leite.</p>
+            <a href="#contato" class="menu-more">Saiba Mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <div class="menu-card-media">
+            <img src="images/entremet-framboesa.jpg" alt="Entremet de framboesa com ganache montada de maracujá e geleia de framboesa" loading="lazy" width="700" height="700">
+          </div>
+          <div class="menu-card-body">
+            <h3>Entremet de Framboesa</h3>
+            <p>Ganache montada de maracujá com geleia de framboesa, equilibrando doçura e acidez.</p>
+            <a href="#contato" class="menu-more">Saiba Mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="menu-card reveal reveal-delay-1">
+          <div class="menu-card-media">
+            <img src="images/entremet-amendoim.jpg" alt="Entremet de amendoim com praliné e crocante de amendoim" loading="lazy" width="700" height="700">
+          </div>
+          <div class="menu-card-body">
+            <h3>Entremet de Amendoim</h3>
+            <p>Ganache montada de amendoim, praliné com amêndoas e crocante de amendoim.</p>
+            <a href="#contato" class="menu-more">Saiba Mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="menu-card reveal reveal-delay-2">
+          <div class="menu-card-media">
+            <img src="images/salted-caramelo.jpg" alt="Salted Caramelo Quente, capuccino italiano com xarope de caramelo" loading="lazy" width="700" height="700">
+          </div>
+          <div class="menu-card-body">
+            <h3>Salted Caramelo Quente</h3>
+            <p>Capuccino italiano com uma dose de xarope de caramelo — parte dos nossos cafés especiais.</p>
+            <a href="#contato" class="menu-more">Saiba Mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DIFERENCIAIS ===================== -->
+  <section id="diferenciais">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" style="justify-content:center">Por que a Vercelli</p>
+        <h2>Nossos diferenciais</h2>
+      </div>
+      <div class="perks reveal">
+        <div class="perk">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M4.5 6.5l15 11M19.5 6.5l-15 11M2 12h20"/></svg></span>
+          <h3>Ambiente climatizado</h3>
+          <p>Conforto em qualquer estação do ano.</p>
+        </div>
+        <div class="perk">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21h14M6 3h10l1 6a5 5 0 0 1-5 5 5 5 0 0 1-5-5l1-6Zm10 3h2a2 2 0 0 1 0 4h-2"/></svg></span>
+          <h3>Cafés especiais</h3>
+          <p>Blends selecionados e extração cuidadosa.</p>
+        </div>
+        <div class="perk">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c-3 3-3 7 0 10 3-3 3-7 0-10ZM12 13v8M8 21h8"/></svg></span>
+          <h3>Doces artesanais</h3>
+          <p>Feitos à mão, todos os dias, na nossa cozinha.</p>
+        </div>
+        <div class="perk">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V7l8-4 8 4v12M4 19h16M9 19v-6h6v6"/></svg></span>
+          <h3>Receitas italianas</h3>
+          <p>Tradição transmitida de geração em geração.</p>
+        </div>
+        <div class="perk">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></span>
+          <h3>Atendimento acolhedor</h3>
+          <p>Cada visita é tratada como especial.</p>
+        </div>
+        <div class="perk">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4.5 8-11.8A5.2 5.2 0 0 0 12 6a5.2 5.2 0 0 0-8 4.2C4 17.5 12 22 12 22Z"/></svg></span>
+          <h3>Produtos frescos diariamente</h3>
+          <p>Ingredientes selecionados a cada manhã.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERIA ===================== -->
+  <section id="galeria" class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" style="justify-content:center">Galeria</p>
+        <h2>Momentos Vercelli</h2>
+        <p>Um pequeno passeio visual pelos nossos doces, cafés e ambiente. Clique para ampliar.</p>
+      </div>
+
+      <div class="gallery reveal" id="gallery">
+        <div class="gallery-item" data-full="images/hero-ambiente.jpg" data-caption="Ambiente aconchegante">
+          <img src="images/hero-ambiente.jpg" alt="Ambiente interno da Vercelli com mesas, espelho emoldurado e escada" loading="lazy" width="700" height="700">
+          <div class="overlay"><span>Ambiente aconchegante</span></div>
+        </div>
+        <div class="gallery-item" data-full="images/fachada.jpg" data-caption="Nossa fachada">
+          <img src="images/fachada.jpg" alt="Fachada da Vercelli Bar e Pasticceria com toldo verde" loading="lazy" width="700" height="700">
+          <div class="overlay"><span>Nossa fachada</span></div>
+        </div>
+        <div class="gallery-item" data-full="images/interior-plantas.jpg" data-caption="Cantinho especial">
+          <img src="images/interior-plantas.jpg" alt="Cantinho da cafeteria com plantas e luminárias artesanais" loading="lazy" width="700" height="700">
+          <div class="overlay"><span>Cantinho especial</span></div>
+        </div>
+        <div class="gallery-item" data-full="images/entremet-queijo.jpg" data-caption="Entremet de Queijo">
+          <img src="images/entremet-queijo.jpg" alt="Entremet de queijo com mousse de cream cheese e doce de goiaba" loading="lazy" width="700" height="900">
+          <div class="overlay"><span>Entremet de Queijo</span></div>
+        </div>
+        <div class="gallery-item" data-full="images/entremet-maca-do-amor.jpg" data-caption="Entremet Maçã do Amor">
+          <img src="images/entremet-maca-do-amor.jpg" alt="Entremet maçã do amor com ganache montada de baunilha e compota de maçã" loading="lazy" width="700" height="700">
+          <div class="overlay"><span>Entremet Maçã do Amor</span></div>
+        </div>
+        <div class="gallery-item" data-full="images/barrinha-brownie.jpg" data-caption="Doce artesanal">
+          <img src="images/barrinha-brownie.jpg" alt="Barrinha de brownie coberta de chocolate e nozes" loading="lazy" width="900" height="450">
+          <div class="overlay"><span>Doce artesanal</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AVALIAÇÕES ===================== -->
+  <section id="avaliacoes">
+    <div class="container reviews-wrap">
+      <div class="reveal">
+        <p class="eyebrow" style="justify-content:center">Avaliações</p>
+        <h2>Quem experimenta, recomenda</h2>
+      </div>
+
+      <div class="rating-badge reveal">
+        <span class="stars">★★★★★</span>
+        <strong>4,5</strong>
+        <span class="src">no Google</span>
+      </div>
+
+      <div class="testimonial-track reveal" id="testimonialTrack">
+        <blockquote class="testimonial active">
+          <div class="stars">★★★★★</div>
+          <p>"Maravilhosa essa tartelette de chocolate, doce na medida certa."</p>
+          <div class="author">— Cliente Vercelli</div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Ambiente muito aconchegante e excelente atendimento."</p>
+          <div class="author">— Cliente Vercelli</div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Os doces são incríveis e o café é excelente."</p>
+          <div class="author">— Cliente Vercelli</div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"O tiramisù é de dar água na boca. Virei cliente fiel."</p>
+          <div class="author">— Cliente Vercelli</div>
+        </blockquote>
+        <blockquote class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Lugar lindo, café impecável e a focaccia é maravilhosa."</p>
+          <div class="author">— Cliente Vercelli</div>
+        </blockquote>
+      </div>
+
+      <div class="dots" id="testimonialDots"></div>
+    </div>
+  </section>
+
+  <!-- ===================== INFORMAÇÕES ===================== -->
+  <section id="informacoes" class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" style="justify-content:center">Informações</p>
+        <h2>Venha nos visitar</h2>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card reveal">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22s7-6.4 7-12A7 7 0 0 0 5 10c0 5.6 7 12 7 12Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+          <h3>Endereço</h3>
+          <p>Av. Laguna, 1895 — Zona 03</p>
+          <p>Maringá – PR, CEP 87050-260</p>
+          <a class="link" href="https://www.instagram.com/vercelli.pasticceria" target="_blank" rel="noopener">Seguir no Instagram →</a>
+        </div>
+        <div class="info-card reveal reveal-delay-1">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1.1.4 2.2.7 3.2a2 2 0 0 1-.5 2.1L8 10.3a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 2.1.6 3.2.7a2 2 0 0 1 1.4 2Z"/></svg></span>
+          <h3>Telefone</h3>
+          <p>(44) 99827-7916</p>
+          <a class="link" href="https://wa.me/5544998277916" target="_blank" rel="noopener">Chamar no WhatsApp →</a>
+        </div>
+        <div class="info-card reveal reveal-delay-2">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+          <h3>Horário</h3>
+          <p class="status-dot">Aberto agora</p>
+          <p>Fecha às 18:30</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LOCALIZAÇÃO ===================== -->
+  <section id="localizacao">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" style="justify-content:center">Localização</p>
+        <h2>Fácil de chegar, difícil de esquecer</h2>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe
+          src="https://www.google.com/maps?q=Av.+Laguna,+1895,+Zona+03,+Maring%C3%A1+-+PR,+87050-260&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa de localização da Vercelli Bar e Pasticceria"
+          aria-label="Mapa de localização da Vercelli Bar e Pasticceria"></iframe>
+        <div class="map-cta">
+          <span>Av. Laguna, 1895 — Maringá, PR</span>
+          <a class="btn btn-dark" href="https://www.google.com/maps/dir/?api=1&destination=Av.+Laguna,+1895,+Zona+03,+Maring%C3%A1+-+PR,+87050-260" target="_blank" rel="noopener">Como chegar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INSTAGRAM ===================== -->
+  <section class="insta">
+    <div class="container reveal">
+      <p class="eyebrow" style="justify-content:center; color:var(--gold-light)">Siga a Vercelli</p>
+      <h2>Acompanhe nosso dia a dia no <span class="handle">@vercelli.pasticceria</span></h2>
+      <p>Bastidores da cozinha, lançamentos de doces e novidades da casa, direto no Instagram.</p>
+      <a href="https://www.instagram.com/vercelli.pasticceria" target="_blank" rel="noopener" class="btn btn-primary">Seguir no Instagram</a>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section id="contato" class="section-alt">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Fale conosco</p>
+        <h2>Vamos conversar</h2>
+        <p>Dúvidas, encomendas ou sugestões — estamos por aqui para te atender com o mesmo carinho de sempre.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22s7-6.4 7-12A7 7 0 0 0 5 10c0 5.6 7 12 7 12Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+            <div><strong>Endereço</strong><span>Av. Laguna, 1895, Zona 03 — Maringá, PR</span></div>
+          </li>
+          <li>
+            <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1.1.4 2.2.7 3.2a2 2 0 0 1-.5 2.1L8 10.3a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 2.1.6 3.2.7a2 2 0 0 1 1.4 2Z"/></svg></span>
+            <div><strong>Telefone / WhatsApp</strong><span>(44) 99827-7916</span></div>
+          </li>
+          <li>
+            <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg></span>
+            <div><strong>Instagram</strong><span>@vercelli.pasticceria</span></div>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal reveal-delay-1" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome completo" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" placeholder="Conte pra gente como podemos ajudar" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark" style="width:100%">Enviar Mensagem</button>
+        <p class="form-note">* Formulário de demonstração — conecte a um serviço de envio (ex: Formspree, EmailJS) para receber as mensagens reais.</p>
+        <div class="form-success" id="formSuccess">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          Mensagem enviada! Em breve entraremos em contato.
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <span class="logo-mark"><img src="images/logo-vercelli.png" alt="Logo Vercelli" width="44" height="44" loading="lazy"></span>
+          <span class="logo-text">Vercelli<span>Bar &amp; Pasticceria</span></span>
+        </a>
+        <p>Cafés especiais, doces artesanais e sabores italianos preparados com excelência, em Maringá – PR.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>Av. Laguna, 1895 — Maringá, PR</li>
+          <li>(44) 99827-7916</li>
+          <li><a href="https://www.instagram.com/vercelli.pasticceria" target="_blank" rel="noopener">@vercelli.pasticceria</a></li>
+          <li><a href="#localizacao">Ver mapa</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Vercelli Bar e Pasticceria. Todos os direitos reservados.</span>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/vercelli.pasticceria" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://wa.me/5544998277916" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1.1.4 2.2.7 3.2a2 2 0 0 1-.5 2.1L8 10.3a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 2.1.6 3.2.7a2 2 0 0 1 1.4 2Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== WHATSAPP FLOAT ===================== -->
+<a href="https://wa.me/5544998277916?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1.1.4 2.2.7 3.2a2 2 0 0 1-.5 2.1L8 10.3a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 2.1.6 3.2.7a2 2 0 0 1 1.4 2Z"/></svg>
+</a>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização de imagem ampliada">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Imagem anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav next" id="lightboxNext" aria-label="Próxima imagem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* Header scroll state */
+const header = document.getElementById('siteHeader');
+const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 60);
+document.addEventListener('scroll', onScroll, { passive:true });
+onScroll();
+
+/* Subtle hero parallax */
+const heroBg = document.getElementById('heroBg');
+document.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  if (y < window.innerHeight * 1.2) {
+    heroBg.style.transform = `translateY(${y * 0.18}px) scale(1.06)`;
+  }
+}, { passive:true });
+
+/* Mobile nav */
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', () => {
+  const open = navLinks.classList.toggle('open');
+  burger.classList.toggle('open', open);
+  burger.setAttribute('aria-expanded', open);
+});
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navLinks.classList.remove('open');
+  burger.classList.remove('open');
+  burger.setAttribute('aria-expanded', false);
+}));
+
+/* Scroll reveal */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+}, { threshold:.15 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* Testimonial carousel */
+const testimonials = Array.from(document.querySelectorAll('.testimonial'));
+const dotsWrap = document.getElementById('testimonialDots');
+let current = 0;
+testimonials.forEach((_, i) => {
+  const b = document.createElement('button');
+  if (i === 0) b.classList.add('active');
+  b.setAttribute('aria-label', `Ver depoimento ${i + 1}`);
+  b.addEventListener('click', () => showTestimonial(i));
+  dotsWrap.appendChild(b);
+});
+function showTestimonial(i){
+  testimonials[current].classList.remove('active');
+  dotsWrap.children[current].classList.remove('active');
+  current = i;
+  testimonials[current].classList.add('active');
+  dotsWrap.children[current].classList.add('active');
+}
+setInterval(() => showTestimonial((current + 1) % testimonials.length), 5500);
+
+/* Lightbox gallery */
+const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+let lbIndex = 0;
+function openLightbox(i){
+  lbIndex = i;
+  const item = galleryItems[lbIndex];
+  lightboxImg.src = item.dataset.full;
+  lightboxImg.alt = item.dataset.caption;
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(){
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
+galleryItems.forEach((item, i) => item.addEventListener('click', () => openLightbox(i)));
+document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+document.getElementById('lightboxNext').addEventListener('click', () => openLightbox((lbIndex + 1) % galleryItems.length));
+document.getElementById('lightboxPrev').addEventListener('click', () => openLightbox((lbIndex - 1 + galleryItems.length) % galleryItems.length));
+lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', (e) => {
+  if (!lightbox.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowRight') openLightbox((lbIndex + 1) % galleryItems.length);
+  if (e.key === 'ArrowLeft') openLightbox((lbIndex - 1 + galleryItems.length) % galleryItems.length);
+});
+
+/* Contact form (demo) */
+const form = document.getElementById('contactForm');
+const success = document.getElementById('formSuccess');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (!form.checkValidity()) { form.reportValidity(); return; }
+  success.classList.add('show');
+  form.reset();
+  setTimeout(() => success.classList.remove('show'), 6000);
+});
+</script>
+
+</body>
+</html>
